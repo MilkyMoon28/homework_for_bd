@@ -1,0 +1,18 @@
+SELECT title, release_date FROM Albums
+WHERE release_date = 2018;
+
+SELECT title, duration FROM Tracks
+ORDER BY duration DESC
+LIMIT 1;
+
+SELECT title FROM Tracks
+WHERE duration >= 350;
+
+SELECT title FROM Compilation
+WHERE release_date BETWEEN 2018 AND 2020 ;
+
+SELECT title FROM Tracks 
+ WHERE lower(title) like '%%my%%' OR lower(title) like '%%мой%%';
+
+SELECT * FROM Artists
+WHERE artist_name NOT LIKE '% %';

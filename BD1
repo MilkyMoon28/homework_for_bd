@@ -1,0 +1,88 @@
+INSERT INTO Genre (id, genre)
+    VALUES (1, 'Pop'), 
+           (2, 'Rock'),
+           (3, 'Kpop'),
+           (4, 'Classic'), 
+           (5, 'Jazz');
+       
+
+INSERT INTO Artists(id, artist_name)
+    VALUES (1, 'BTS'),
+           (2, 'Mozart'),
+           (3, 'Ariana Grande'),
+           (4, 'Michael Jackson'),
+           (5, 'The Beatles'),
+           (6, 'Blackpink'),
+           (7, 'Billie Holiday'),
+           (8, 'Maneskin');
+    
+
+INSERT INTO ArtistsGenre(artists_id, genre_id)
+    VALUES (1, 3),
+           (2, 4),
+           (3, 1),
+           (4, 1),
+           (5, 2),
+           (6, 3),
+           (7, 5),
+           (8, 2);
+           
+INSERT INTO Album(id, title, release_date)
+    VALUES (1, 'Proof', 2022),
+           (2, 'Overtures', 1995),
+           (3, 'thank u, next', 2019),
+           (4, 'Invincible', 2001),
+           (5, 'Help!', 1965),
+           (6, 'The album', 2020),
+           (7, 'Lady Day', 2001),
+           (8, 'Chosen', 2018);
+
+INSERT INTO ArtistsAlbums(artists_id, albums_id)
+    VALUES (1, 1),
+           (2, 2),
+           (3, 3),
+           (4, 4),
+           (5, 5),
+           (6, 6),
+           (7, 7),
+           (8, 8);
+           
+          
+INSERT INTO Tracks(id, title, duration, albums_id)
+    VALUES (1, 'Yet to come', 415, 1 ),
+           (2, 'Run bts', 322, 1),
+           (3, 'Epiphany', 356, 1),
+           (4, 'Don Giovanni - Overture', 273, 2),
+           (5, 'Beggin', 332, 8),
+           (6, 'fake smile', 330, 3),
+           (7, 'ghostin', 432, 3),
+           (8, 'You rock my world', 538, 4),
+           (9, 'Butterflies', 439, 4),       
+           (10, 'Lovesick girls', 313, 6),
+           (11, 'You never know', 350, 6),
+           (12, 'Crazy over you', 242, 6),
+           (13, 'Another girl', 208, 5),
+           (14, 'Guess who', 311, 7),
+           (15, 'If my heart could only talk', 306, 7);
+           
+
+INSERT INTO Compilation (id, title, release_date)
+    VALUES (1, 'Greatest hits', 2021),
+           (2, 'Bulletproof Collection', 2022),
+           (3, 'The collections', 2020),
+           (4, 'Collection of classic', 1995),
+           (5, 'Maneskin collection', 2018),
+           (6, 'Billie Holiday collection', 2005),
+           (7, 'Michael Jakson collection', 2002),
+           (8, 'The Beatles collection', 2001);
+
+INSERT INTO TracksCompilation(Compilation_id, Tracks_id)
+    VALUES (1, 5),
+           (2, 2),
+           (3, 11),
+           (4, 4),
+           (5, 5),
+           (6, 14),
+           (7, 8),
+           (8, 13);
+
